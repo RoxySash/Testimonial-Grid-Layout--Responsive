@@ -1,0 +1,298 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.4;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+
+    margin: 0 auto;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-size: 0.8125rem;  /* 13px  base 0.8125rem */
+    
+    background-color: var(--neutral-color-two);
+
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    
+    
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+    
+  }
+
+ 
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  :root {
+    --primary-color: hsl(263, 55%, 52%); /* Moderate violet */
+    --secondary-color: hsl(217, 19%, 35%); /* Very dark grayish blue */
+    --third-color: hsl(219, 29%, 14%); /* Very dark blackish blue */
+    --fourth-color: hsl(0, 0%, 100%); /* White */
+
+    --neutral-color-one: hsl(0, 0%, 81%); /* Light gray */
+    --neutral-color-two: hsl(210, 46%, 95%); /* Light grayish blue */
+
+    /* transparency with rgb 50% and 70%* rgba adds alpha which uses 0 - 1 transparency */
+
+    --violet-50-color: rgba(117, 65, 200, 0.5);
+    --violet-70-color: rgba(117, 65, 200, 0.7);
+    --gray-50-color: rgba(72, 85, 106, 0.5);
+    --gray-70-color: rgba(72, 85, 106, 0.7);
+    --blue-50-color: rgba(25, 33, 46, 0.5);
+    --blue-70-color: rgba(25, 33, 46, 0.7);
+    --white-50-color: rgba(255, 255, 255, 0.5);
+    --white-70-color: rgba(255, 255, 255, 0.7);
+
+
+
+
+  }
+
+  .container {
+    
+    width: 300px;/* maybe not retrict this ill review later */ 
+    max-width: 80%;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    
+    grid-gap: 30px;
+    border: 2px dashed red;
+   
+  }
+  
+  h2 {
+    font-size: 1.0rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  }
+
+
+.card__one {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 30px;
+    color: var(--fourth-color);
+}
+
+.profile__section-name {
+  padding-left: 15px;
+  
+}
+
+.daniel__profile {
+    border-radius: 15px;
+    border: 3px solid var(--white-50-color);
+}
+
+.daniel__name {
+  font-size: 0.765rem;
+}
+
+.daniel__verified {
+  color: var(--white-50-color);
+  font-size: 0.658rem;
+  
+  
+}
+
+.daniel__testimony {
+  color: var(--white-70-color);
+}
+
+.profile__section {
+    display: flex;   
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.card__two {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 30px;
+    color: var(--fourth-color);
+}
+
+.jonathon__profile {
+  border-radius: 15px;
+}
+
+.jonathon__name {
+  font-size: 0.765rem;
+}
+
+.jonathon__verified {
+  color: var(--white-50-color);
+  font-size: 0.658rem;
+}
+
+.jonathon__testimony {
+  color: var(--white-70-color);
+}
+
+.card__three {
+    background-color: var(--fourth-color);
+    border-radius: 5px;
+    padding: 30px;
+    color: var(--secondary-color);
+    
+}
+.jeanette__profile {
+  border-radius: 15px;
+}
+
+.jeanette__name {
+  font-size: 0.765rem;
+}
+
+.jeanette__verified {
+  color: var(--gray-50-color);
+  font-size: 0.658rem;
+}
+
+.jeanette__testimony {
+  color: var(--gray-70-color);
+}
+
+.card__four {
+    background-color: var(--third-color);
+    border-radius: 5px;
+    padding: 30px;
+    color: var(--fourth-color);
+}
+
+.patrick__profile {
+  border-radius: 15px;
+}
+
+.patrick__name {
+  font-size: 0.765rem;
+}
+
+.patrick__verified {
+  color: var(--white-50-color);
+  font-size: 0.658rem;
+}
+
+.patrick__testimony {
+  color: var(--white-70-color);
+}
+
+.card__five {
+    background-color: var(--fourth-color);
+    border-radius: 5px;
+    padding: 30px;
+    color: var(--secondary-color);
+}
+
+.kira__profile {
+  border-radius: 15px;
+}
+
+.kira__name {
+  font-size: 0.765rem;
+}
+
+.kira__verified {
+  color: var(--gray-50-color);
+  font-size: 0.658rem;
+}
+
+.kira__testimony {
+  color: var(--gray-70-color);
+}
+
+/* add grid in media query below */
+
+@media (min-width:720px) {
+  .container {
+    display: grid;
+    grid-auto-rows: 290px;
+    /*grid-template-rows: repeat(2, 290px);*/
+   /* grid-auto-rows: minmax(100px, auto); */
+    grid-template-columns: repeat(4, 210px);
+    
+    min-height: 100vh;
+    /*max-width: 980px; */
+    
+    
+   
+    
+    
+  }
+
+  .card__one {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row:1;
+    
+  }
+   
+  .card__two {
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row: 1;
+    
+  }
+
+  .card__three {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row: 2;
+    
+    
+  }
+
+  .card__four {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row: 2;
+  }
+
+  .card__five {
+    grid-column-start: 4;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    
+  } 
+
+ 
+ 
+}
