@@ -116,7 +116,7 @@
 }
 
 .daniel__profile {
-    border-radius: 15px;
+    border-radius: 50%;
     border: 3px solid var(--white-50-color);
 }
 
@@ -199,7 +199,7 @@
 }
 
 .patrick__profile {
-  border-radius: 15px;
+  border-radius: 50%;
   border: 3px solid var(--violet-50-color);
 }
 
@@ -261,7 +261,7 @@
    grid-auto-rows: minmax(1fr, auto); 
    
      grid-template-columns: repeat(4, 1fr);
-    background-color: blue;
+    /*background-color: blue;*/
 
    
 
