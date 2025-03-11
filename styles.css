@@ -12,12 +12,12 @@
     /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
 
-    min-height: 100vh;
     margin: 0 auto;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-style: normal;
     font-size: 0.8125rem;  /* 13px  base 0.8125rem */
-    
+    margin-top: 30px;
+    margin-bottom: 20px;
     background-color: var(--neutral-color-two);
     
   }
@@ -75,20 +75,16 @@
     --white-50-color: rgba(255, 255, 255, 0.5);
     --white-70-color: rgba(255, 255, 255, 0.7);
 
+    /* box shadow */
 
-
+    --box-shadow: 0px 20px 40px rgba(107, 107, 107, 0.2);
 
   }
 
   .container {
-    
-     /*  maybe not retrict this ill review later */ 
-    
-    min-height: 100vh;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
     grid-gap: 30px;
     
    
@@ -107,10 +103,11 @@
     border-radius: 10px;
     padding: 30px;
     color: var(--fourth-color);
+    box-shadow: var(--box-shadow);
 }
 
 .profile__section-name {
-  padding-left: 15px;
+  padding-left: 15px;    
   
 }
 
@@ -126,8 +123,6 @@
 .daniel__verified {
   color: var(--white-50-color);
   font-size: 0.658rem;
-  
-  
 }
 
 .daniel__testimony {
@@ -146,6 +141,7 @@
     border-radius: 10px;
     padding: 30px;
     color: var(--fourth-color);
+    box-shadow: var(--box-shadow);
 }
 
 .jonathon__profile {
@@ -170,6 +166,7 @@
     border-radius: 10px;
     padding: 30px;
     color: var(--secondary-color);
+    box-shadow: var(--box-shadow);
     
 }
 .jeanette__profile {
@@ -194,6 +191,7 @@
     border-radius: 10px;
     padding: 30px;
     color: var(--fourth-color);
+    box-shadow: var(--box-shadow);
     
 }
 
@@ -220,6 +218,7 @@
     border-radius: 10px;
     padding: 30px;
     color: var(--secondary-color);
+    box-shadow: var(--box-shadow);
 }
 
 .kira__profile {
@@ -239,38 +238,30 @@
   color: var(--gray-70-color);
 }
 
-/* add grid in media query below */
+
 
 @media (min-width:912px) {
 
  
   
   .container {
+    
     display: grid;
     justify-content: center;
-    justify-items: center;
     margin: 0 auto;
-    
-    min-height: 100vh;
-    
-    /*grid-template-rows: 50vh auto; */
-    
-    /*grid-auto-rows: 310px 300px;*/
-    
-   grid-auto-rows: minmax(1fr, auto); 
-   
-     grid-template-columns: repeat(4, 1fr);
-    /*background-color: blue;*/
-
-   
+    max-width: 1000px;
+    grid-auto-rows: minmax(170px, auto);
+    grid-template-columns: repeat(4, 1fr);
 
   }
 
+
+ 
   .card__one {
     grid-column-start: 1;
     grid-column-end: span 2;
     grid-row:1;
-    
+   
   }
    
   .card__two {
@@ -292,6 +283,7 @@
     grid-column-start: 2;
     grid-column-end: span 2;
     grid-row: 2;
+    
   }
 
   .card__five {
@@ -299,7 +291,7 @@
     grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 2;
-    
+   
   } 
 
  
