@@ -20,6 +20,9 @@
     margin-bottom: 20px;
     background-color: var(--neutral-color-two);
     
+    min-height: 100vh;
+    place-content: center;
+
   }
   
   /* 5. Improve media defaults */
