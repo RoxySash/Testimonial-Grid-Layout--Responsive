@@ -110,7 +110,7 @@ h2 {
   color: var(--fourth-color);
   box-shadow: var(--box-shadow);
 
-  background-image: url("../images/bg-pattern-quotation.svg");
+  background-image: url("./images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: top right 20%;
 }
