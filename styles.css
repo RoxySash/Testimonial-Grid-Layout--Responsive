@@ -11,7 +11,7 @@
     line-height: 1.4;
     /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
-
+    
     margin: 0 auto;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-style: normal;
@@ -104,7 +104,16 @@
     padding: 30px;
     color: var(--fourth-color);
     box-shadow: var(--box-shadow);
+    
+    
 }
+
+.card__one {
+  background-image: url("/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 20%;
+}
+
 
 .profile__section-name {
   padding-left: 15px;    
@@ -127,6 +136,7 @@
 
 .daniel__testimony {
   color: var(--white-70-color);
+ 
 }
 
 .profile__section {
@@ -241,9 +251,6 @@
 
 
 @media (min-width:912px) {
-
- 
-  
   .container {
     
     display: grid;
@@ -293,7 +300,4 @@
     grid-row-end: span 2;
    
   } 
-
- 
- 
 }
